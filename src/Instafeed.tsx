@@ -1,36 +1,44 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import './App.css';
+
+const instaAccesstoken = (process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN);
+
+interface Post {
+  id: string;
+  media_type: string;
+  media_url: string;
+  caption: string;
+}
 
 function Instafeed() {
-  const [feed, setFeed] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState<Post[]>([]);
 
   useEffect(() => {
-    const fetchFeed = async () => {
-      try {
-        const response = await axios.get(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url&access_token=${process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}`);
-        setFeed(response.data.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchFeed();
+    fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token=${instaAccesstoken}`)
+      .then(response => response.json())
+      .then(response => {
+        setData(response.data);
+        setIsLoading(false);
+      })
+      .catch(error => console.log(error));
   }, []);
 
   return (
-    <>
-      <h1>My Instagram Feed</h1>
-      <div>
-        {feed.map(post => (
-          <div key={post.id}>
-            {post.media_type === 'VIDEO' ? (
-              <video src={post.media_url} controls width="100%" />
-            ) : (
-              <img src={post.media_url} alt={post.caption} />
-            )}
-          </div>
-        ))}
-      </div>
-    </>
+    <div>
+      {isLoading ? (
+        <h2>Loading...</h2>
+      ) : (
+        <div>
+          {data.map((item: Post) => (
+            <div key={item.id}>
+              <img src={item.media_url} alt={item.caption} />
+              <p>{item.caption}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
 
