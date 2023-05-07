@@ -7,6 +7,9 @@ function Home() {
       <Link to="/instafeed">
         <p>instafeed</p>
       </Link>
+      <Link to="/soundcloud">
+        <p>Soundcloud</p>
+      </Link>
     </div>
   );
 }
