@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div>
+    <div className='homediv'>
       <h2>koko854</h2>
       <Link to="/instafeed">
         <p>instafeed</p>
