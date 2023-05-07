@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './instafeed.css'
 
 const instaAccesstoken = (process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN);
 
@@ -15,7 +15,7 @@ function Instafeed() {
   const [data, setData] = useState<Post[]>([]);
 
   useEffect(() => {
-    fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token=${instaAccesstoken}`)
+    fetch(`https://graph.instagram.com/me/media?fields=id,media_type,media_url&access_token=${instaAccesstoken}`)
       .then(response => response.json())
       .then(response => {
         setData(response.data);
@@ -25,11 +25,11 @@ function Instafeed() {
   }, []);
 
   return (
-    <div>
+    <div className='bkground'>
       {isLoading ? (
         <h2>Loading...</h2>
       ) : (
-        <div>
+        <div className='mainFeed'>
           {data.map((item: Post) => (
             <div key={item.id}>
               <img src={item.media_url} alt={item.caption} />
