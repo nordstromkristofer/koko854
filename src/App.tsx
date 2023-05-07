@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Instafeed from './Instafeed';
+import Home from './Home';
+
 
 function App() {
   return (
-    <div className="App">
-      <h2>koko854 app</h2>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/instafeed" element={<Instafeed />} />
+      </Routes>
+    </Router>
   );
 }
 
