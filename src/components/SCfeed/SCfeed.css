@@ -1,0 +1,39 @@
+.SCplayer {
+  border-radius: 10px;
+  width: 500px;
+  height: 220px;
+}
+
+.SoundCard {
+  width: 500px;
+  height: 220px;
+}
+
+.SoundCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.CardContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.SCfeed {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.privacyPolicy__link {
+  display: none;
+}
+
+.SCfeed .privacyPolicy__link {
+  display: none;
+}
