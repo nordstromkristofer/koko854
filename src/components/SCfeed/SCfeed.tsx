@@ -32,7 +32,7 @@ function SCfeed() {
 
   const playerStyle = {
     borderRadius: '20px',
-    backgroundColor: '#e0e0e0',
+
     overflow: 'hidden'
   }
 
@@ -43,7 +43,6 @@ function SCfeed() {
         show_comments: false,
         show_user: true,
         visual: true,
-        color: "#cb00ff"
       }
     }
   }
@@ -56,23 +55,27 @@ function SCfeed() {
   console.log("render");
 
   return (
-    <div>
 
-      <div className="SCfeed">
-        {tracks.map((track, index) => (
-          <div key={index} className="SCtrack" onClick={() => handlePlay(track)}>
-            <Card className="SoundCard" sx={{ width: "100%", display: "flex" }} style={cardStyle}>
-              <ReactPlayer
-                className="SCplayer"
-                url={track}
-                width="440px"
-                height="160px"
-                style={playerStyle}
-                config={playerConfig}
-              />
-            </Card>
-          </div>
-        ))}
+    <div className="background">
+
+      <div className="container">
+
+        <div className="SCfeed">
+          {tracks.map((track, index) => (
+            <div key={index} className="SCtrack" onClick={() => handlePlay(track)}>
+              <Card className="SoundCard" sx={{ width: "100%", display: "flex", backgroundColor: "#395639", opacity: "80%" }} style={cardStyle} >
+                <ReactPlayer
+                  className="SCplayer"
+                  url={track}
+                  width="440px"
+                  height="160px"
+                  style={playerStyle}
+                  config={playerConfig}
+                />
+              </Card>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
 
