@@ -49,3 +49,9 @@
 .SCfeed .privacyPolicy__link {
   display: none;
 }
+
+@media (max-width: 375px) {
+  .my-element {
+    font-size: 16px;
+  }
+}
