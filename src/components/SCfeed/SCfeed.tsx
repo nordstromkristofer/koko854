@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import ReactPlayer from "react-player"
 import Card from '@mui/material/Card';
 
+import Header from '../header/header'
+
 
 import './SCfeed.css'
 
@@ -55,26 +57,28 @@ function SCfeed() {
   console.log("render");
 
   return (
+    <div>
 
-    <div className="background">
+      <div className="background">
+        <Header />
+        <div className="container">
 
-      <div className="container">
-
-        <div className="SCfeed">
-          {tracks.map((track, index) => (
-            <div key={index} className="SCtrack" onClick={() => handlePlay(track)}>
-              <Card className="SoundCard" sx={{ width: "100%", display: "flex", backgroundColor: "#395639", opacity: "80%" }} style={cardStyle} >
-                <ReactPlayer
-                  className="SCplayer"
-                  url={track}
-                  width="440px"
-                  height="160px"
-                  style={playerStyle}
-                  config={playerConfig}
-                />
-              </Card>
-            </div>
-          ))}
+          <div className="SCfeed">
+            {tracks.map((track, index) => (
+              <div key={index} className="SCtrack" onClick={() => handlePlay(track)}>
+                <Card className="SoundCard" sx={{ width: "100%", display: "flex", backgroundColor: "#395639", opacity: "80%" }} style={cardStyle} >
+                  <ReactPlayer
+                    className="SCplayer"
+                    url={track}
+                    width="440px"
+                    height="160px"
+                    style={playerStyle}
+                    config={playerConfig}
+                  />
+                </Card>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

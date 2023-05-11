@@ -1,16 +1,14 @@
 import { Link } from 'react-router-dom';
 import './home.css'
+import Header from '../header/header'
 
 function Home() {
   return (
-    <div className='homediv'>
-      <h2>koko854</h2>
-      <Link to="/instafeed">
-        <p>instafeed</p>
-      </Link>
-      <Link to="/soundcloud">
-        <p>Soundcloud</p>
-      </Link>
+    <div>
+      <Header />
+      <div className='homediv'>
+        <h1>Home</h1>
+      </div>
     </div>
   );
 }

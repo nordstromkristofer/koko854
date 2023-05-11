@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './instafeed.css'
+import Header from '../header/header'
 
 const instaAccesstoken = (process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN);
 
@@ -25,19 +26,22 @@ function Instafeed() {
   }, []);
 
   return (
-    <div className='bkground'>
-      {isLoading ? (
-        <h2>Loading...</h2>
-      ) : (
-        <div className='mainFeed'>
-          {data.map((item: Post) => (
-            <div key={item.id}>
-              <img src={item.media_url} alt={item.caption} />
-              <p>{item.caption}</p>
-            </div>
-          ))}
-        </div>
-      )}
+    <div>
+      <Header />
+      <div className='bkground'>
+        {isLoading ? (
+          <h2>Loading...</h2>
+        ) : (
+          <div className='mainFeed'>
+            {data.map((item: Post) => (
+              <div key={item.id}>
+                <img src={item.media_url} alt={item.caption} />
+                <p>{item.caption}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
