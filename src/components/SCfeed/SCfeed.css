@@ -1,0 +1,51 @@
+.SCplayer {
+  border-radius: 10px;
+  width: 500px;
+  height: 220px;
+}
+
+.SoundCard {
+  width: 500px;
+  height: 220px;
+}
+
+.SoundCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.background {
+  height: 45rem;
+  width: 90rem;
+  background: url('./forest.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.CardContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.SCfeed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 9%;
+  width: 97%;
+  margin: 0% auto;
+}
+
+.privacyPolicy__link {
+  display: none;
+}
+
+.SCfeed .privacyPolicy__link {
+  display: none;
+}
