@@ -6,6 +6,16 @@
 }
 
 .links {
+  width: 70%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top: 3%;
+  margin: 0 auto;
+}
+
+a {
+  color: rgb(215, 176, 33);
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
 }
