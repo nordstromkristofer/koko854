@@ -1,0 +1,44 @@
+.headerbackground {
+  padding: 4px;
+  height: 8rem;
+  background-color: #395639;
+  opacity: 80%;
+  margin-bottom: 10%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4%;
+  margin: 0 auto;
+}
+
+a {
+  color: rgb(215, 176, 33);
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+
+  nav {
+    margin-top: 9%;
+    padding: 1%;
+  }
+
+  .links {
+    margin: 0;
+    width: unset;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+
+}

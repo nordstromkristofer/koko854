@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding-top: 9%;
+  padding-top: 3%;
   width: 97%;
   margin: 0% auto;
 }
@@ -48,4 +48,25 @@
 
 .SCfeed .privacyPolicy__link {
   display: none;
+}
+
+@media (max-width: 375px) {
+  .SCfeed {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding-top: 3%;
+    width: 29rem;
+    margin-left: 1.6%
+  }
+
+  .SoundCard,
+  .SCtrack {
+    width: 360px;
+  }
+
+  .background {
+    width: 30rem;
+    height: 100%;
+  }
 }
