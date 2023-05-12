@@ -57,11 +57,12 @@
     gap: 20px;
     padding-top: 3%;
     width: 29rem;
-    margin-left: 0.5%
+    margin-left: 1.6%
   }
 
-  .SoundCard {
-    width: 22.5rem;
+  .SoundCard,
+  .SCtrack {
+    width: 360px;
   }
 
   .background {
