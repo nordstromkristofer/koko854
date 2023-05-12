@@ -1,4 +1,19 @@
-.homediv {
-  margin-left: 45%;
-  margin-top: 5%;
-}
+  .homediv {
+    display: flex;
+    width: 96%;
+    justify-content: center;
+  }
+
+
+
+
+  @media (max-width: 375px) {
+
+
+
+    .homediv {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
