@@ -56,17 +56,30 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     padding-top: 3%;
-    width: 29rem;
+    width: 375px;
     margin-left: 1.6%
   }
 
   .SoundCard,
   .SCtrack {
     width: 360px;
+    height: 11rem;
   }
 
   .background {
     width: 30rem;
     height: 100%;
+  }
+}
+
+@media (min-width: 1880px) {
+  .background {
+    width: 100%;
+    height: 55.1rem;
+  }
+
+  .headerbackground {
+
+    margin-bottom: 1%
   }
 }

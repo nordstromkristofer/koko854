@@ -3,7 +3,6 @@
   height: 8rem;
   background-color: #395639;
   opacity: 80%;
-  margin-bottom: 10%;
 }
 
 .links {
@@ -25,6 +24,10 @@ a {
 }
 
 @media (max-width: 375px) {
+
+  header {
+    width: 370px;
+  }
 
   nav {
     margin-top: 9%;
