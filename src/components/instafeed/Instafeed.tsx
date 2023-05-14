@@ -14,6 +14,7 @@ interface Post {
 function Instafeed() {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState<Post[]>([]);
+  const [isAnimated, setIsAnimated] = useState(false);
 
   useEffect(() => {
     fetch(`https://graph.instagram.com/me/media?fields=id,media_type,media_url&access_token=${instaAccesstoken}`)
@@ -21,6 +22,7 @@ function Instafeed() {
       .then(response => {
         setData(response.data);
         setIsLoading(false);
+        setIsAnimated(true);
       })
       .catch(error => console.log(error));
   }, []);
@@ -32,13 +34,15 @@ function Instafeed() {
         {isLoading ? (
           <h2>Loading...</h2>
         ) : (
-          <div className='mainFeed'>
-            {data.map((item: Post) => (
-              <div key={item.id}>
-                <img src={item.media_url} alt={item.caption} />
-                <p>{item.caption}</p>
-              </div>
-            ))}
+          <div className='feedContainer'>
+            <div className={`mainFeed${isAnimated ? ' animate' : ''}`}>
+              {data.map((item: Post) => (
+                <div key={item.id}>
+                  <img src={item.media_url} alt={item.caption} className='instaimg' />
+                  <p>{item.caption}</p>
+                </div>
+              ))}
+            </div>
           </div>
         )}
       </div>

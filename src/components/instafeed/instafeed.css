@@ -1,9 +1,41 @@
-.mainFeed {
+.feedContainer {
+  padding-top: 2%;
   display: flex;
+  overflow-x: hidden;
+  /* ändrat från scroll till hidden */
 }
 
-.bkground {
-  background: url('./forest.jpeg') no-repeat center center fixed;
+.mainFeed {
+  display: flex;
+  flex-direction: row;
+  animation: scroll 110s linear infinite;
+  /* lägger till karusell-animation */
+}
+
+.mainFeed:hover {
+  animation-play-state: paused;
+
+  /* pausar animationen när man hovrar över mainFeed */
+}
+
+img:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+  /* pausar animationen när man hovrar över mainFeed */
+}
+
+.mainFeed>div {
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 img {
@@ -15,4 +47,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bkground {
+  height: 45rem;
+  width: 90rem;
+  background: url('./forest.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
