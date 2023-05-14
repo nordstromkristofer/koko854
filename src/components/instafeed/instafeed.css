@@ -2,14 +2,29 @@
   padding-top: 2%;
   display: flex;
   overflow: hidden !important;
+  align-items: flex-start;
   /* ändrat från scroll till hidden */
+}
+
+.componentContainer {
+  height: 82%;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.instaborder {
+  height: 93%;
+  display: flex;
 }
 
 .mainFeed {
   display: flex;
   flex-direction: row;
+
   animation: scroll 110s linear infinite;
   width: 200%;
+  height: 10rem;
   /* ökar bredden på mainFeed-elementet */
   margin: 0;
   /* tar bort marginalen mellan bilderna */
@@ -31,7 +46,6 @@
 }
 
 img:hover {
-  animation-play-state: paused;
   cursor: pointer;
   /* pausar animationen när man hovrar över mainFeed */
 }
@@ -51,7 +65,8 @@ img:hover {
 img {
   border: 3px solid black;
   border-radius: 20px;
-  max-height: 90%;
+  max-width: 100%;
+  /* max-height: 100%; */
   max-width: 20rem;
   margin: 0 auto;
   display: flex;
@@ -60,11 +75,18 @@ img {
 }
 
 .bkground {
-  height: 45rem;
+  height: 47.75rem;
   width: 100%;
   background: url('./forest.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+@media (min-width: 1600px) {
+
+  .bkground {
+    height: 50.5rem;
+  }
 }

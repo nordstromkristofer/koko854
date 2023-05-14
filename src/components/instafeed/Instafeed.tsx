@@ -29,19 +29,22 @@ function Instafeed() {
 
   return (
     <div>
-      <Header />
+
       <div className='bkground'>
+        <Header />
         {isLoading ? (
           <h2>Loading...</h2>
         ) : (
-          <div className='feedContainer'>
-            <div className={`mainFeed${isAnimated ? ' animate' : ''}`}>
-              {data.map((item: Post) => (
-                <div key={item.id}>
-                  <img src={item.media_url} alt={item.caption} className='instaimg' />
-                  <p>{item.caption}</p>
-                </div>
-              ))}
+          <div className='componentContainer'>
+            <div className='feedContainer'>
+              <div className={`mainFeed${isAnimated ? ' animate' : ''}`}>
+                {data.map((item: Post) => (
+                  <div key={item.id} className='instaborder'>
+                    <img src={item.media_url} alt={item.caption} className='instaimg' />
+                    <p>{item.caption}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         )}

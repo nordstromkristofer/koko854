@@ -29,22 +29,9 @@ function Home() {
 
   return (
     <div>
-      <Header />
+
       <div className='bkground'>
-        {isLoading ? (
-          <h2>Loading...</h2>
-        ) : (
-          <div className='feedContainer'>
-            <div className={`mainFeed${isAnimated ? ' animate' : ''}`}>
-              {data.map((item: Post) => (
-                <div key={item.id}>
-                  <img src={item.media_url} alt={item.caption} />
-                  <p>{item.caption}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+        <Header />
       </div>
     </div>
   );
