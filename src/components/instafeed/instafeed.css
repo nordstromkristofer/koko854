@@ -1,14 +1,23 @@
 .mainFeed {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1rem;
+  grid-template-columns: repeat(4, 20rem);
+  grid-template-rows: repeat(10, 13rem);
+  margin-left: 4%;
+  padding-top: 2%;
 }
 
 .bkground {
-  background-color: #571757;
+  background: url('./forest.jpeg') no-repeat center center fixed;
 }
 
 img {
-  max-height: 20%;
-  margin-top: 1rem;
+  border: 3px solid black;
+  border-radius: 20px;
+  max-height: 90%;
+  max-width: 20rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
