@@ -1,7 +1,7 @@
 .feedContainer {
   padding-top: 2%;
   display: flex;
-  overflow-x: hidden;
+  overflow: hidden !important;
   /* ändrat från scroll till hidden */
 }
 
@@ -9,7 +9,19 @@
   display: flex;
   flex-direction: row;
   animation: scroll 110s linear infinite;
-  /* lägger till karusell-animation */
+  width: 200%;
+  /* ökar bredden på mainFeed-elementet */
+  margin: 0;
+  /* tar bort marginalen mellan bilderna */
+}
+
+.mainFeed>div {
+  margin-right: 5px;
+  /* minskar marginalen mellan bilderna */
+  margin-left: 5px;
+  /* lägger till marginal till vänster om första bilden */
+  flex: 1;
+  /* gör att bilderna tar upp lika mycket plats i bredd */
 }
 
 .mainFeed:hover {
@@ -24,9 +36,7 @@ img:hover {
   /* pausar animationen när man hovrar över mainFeed */
 }
 
-.mainFeed>div {
-  margin-right: 10px;
-}
+
 
 @keyframes scroll {
   0% {
@@ -51,7 +61,7 @@ img {
 
 .bkground {
   height: 45rem;
-  width: 90rem;
+  width: 100%;
   background: url('./forest.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

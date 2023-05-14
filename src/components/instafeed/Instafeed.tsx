@@ -46,7 +46,7 @@ function Instafeed() {
           </div>
         )}
       </div>
-    </div>
+    </div >
   );
 }
 
