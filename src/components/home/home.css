@@ -1,19 +1,23 @@
-  .homediv {
-    display: flex;
-    width: 96%;
-    justify-content: center;
-  }
+.mainFeed {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 20rem);
+  grid-template-rows: repeat(10, 13rem);
+  margin-left: 4%;
+  padding-top: 2%;
+}
 
+.bkground {
+  background: url('./forest.jpeg') no-repeat center center fixed;
+}
 
-
-
-  @media (max-width: 375px) {
-
-
-
-    .homediv {
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
-  }
+img {
+  border: 3px solid black;
+  border-radius: 20px;
+  max-height: 90%;
+  max-width: 20rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
