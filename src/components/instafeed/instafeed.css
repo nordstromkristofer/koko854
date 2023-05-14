@@ -84,6 +84,27 @@ img {
   background-size: cover;
 }
 
+
+@media only screen and (max-width: 375px) {
+
+  .bkground {
+    height: 41.75rem;
+
+  }
+
+  .componentContainer {
+    height: 72%;
+  }
+
+  .mainFeed {
+    height: 7 rem;
+  }
+
+
+}
+
+
+
 @media (min-width: 1600px) {
 
   .bkground {
