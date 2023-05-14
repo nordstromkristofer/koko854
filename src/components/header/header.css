@@ -21,6 +21,11 @@ a {
   font-style: normal;
   font-size: 2rem;
   text-decoration: none;
+  border: 1px solid;
+  font-weight: 900;
+  padding: 8px;
+  background-color: #313c1b;
+  border-radius: 15px;
 }
 
 @media (max-width: 375px) {
@@ -35,12 +40,37 @@ a {
   }
 
   .links {
-    margin: 0;
-    width: unset;
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+
+}
+
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+
+  header {
+    width: 370px;
+  }
+
+  nav {
+    margin-top: 9%;
+    padding: 1%;
+  }
+
+  .links {
+    margin-left: 0;
+    padding-left: 1rem;
   }
 
   a {
     font-size: 1.5rem;
+    padding: 15px;
   }
 
 
