@@ -1,34 +1,21 @@
+/*     .mainFeed {
+      width: 100%;
+      border: 11px solid orange;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 8% 1fr;
+    } */
+
+.feedContainer {
+  display: flex;
+  overflow-x: scroll;
+}
+
 .mainFeed {
-  /*  display: flex; */
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: row;
 }
 
 .mainFeed>div {
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
-  text-align: center;
-}
-
-.mainFeed>div img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.animate {
-  animation: scroll 20s linear infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+  margin-right: 10px;
 }
