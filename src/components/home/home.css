@@ -7,6 +7,7 @@
     } */
 
 .feedContainer {
+  padding-top: 2%;
   display: flex;
   overflow-x: scroll;
 }
