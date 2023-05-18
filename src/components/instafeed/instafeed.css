@@ -23,7 +23,6 @@
 }
 
 .mainFeed {
-  border-top: 2px solid white;
   display: flex;
   flex-direction: row;
   align-self: flex-end;
@@ -113,5 +112,17 @@
 
   .bkground {
     height: 50.5rem;
+  }
+
+  .componentContainer {
+    height: 92.2%
+  }
+
+  .instalogo,
+  .mixcloudlogo,
+  .soundcloudlogo {
+    height: 4rem;
+    padding-left: 1%;
+    padding-top: 1%;
   }
 }
