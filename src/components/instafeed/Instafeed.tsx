@@ -41,7 +41,7 @@ function Instafeed() {
           <div className='componentContainer'>
 
             <div className='feedContainer'>
-              <a href="http://instagram.com__koko854" target="_blank" rel="noopener noreferrer" className="instalogo" >
+              <a href="http://instagram.com/__koko854" target="_blank" rel="noopener noreferrer" className="instalogo" >
                 <img src={instaImg} className="instalogo" alt="Instagramlogo" />
               </a>
               <a href="https://soundcloud.com/kristougha" target="_blank" rel="noopener noreferrer" className="soundcloudlogo" >
