@@ -1,22 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&family=Overpass&display=swap');
+
 .headerbackground {
   padding: 4px;
   height: 8rem;
-  background-color: #395639;
-  opacity: 55%;
+  background: rgb(19, 28, 16);
+  background: linear-gradient(90deg, rgba(19, 28, 16, 0.899) 0%, rgba(82, 149, 85, 0.572) 23%, rgba(0, 0, 0, 0.66) 100%);
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .links {
   display: flex;
   justify-content: center;
 
-  width: 70%;
+  width: 71rem;
   display: flex;
   justify-content: space-between;
-  padding-top: 4%;
   margin: 0 auto;
+  padding-bottom: 1%;
 }
 
-a {
+
+
+.linktext {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.linktext:hover {
+  font-weight: 900;
+}
+
+
+/* a {
   color: rgb(215, 176, 33);
   font-style: normal;
   font-size: 2rem;
@@ -26,7 +45,7 @@ a {
   padding: 8px;
   background-color: #313c1b;
   border-radius: 15px;
-}
+} */
 
 @media (max-width: 375px) {
 
