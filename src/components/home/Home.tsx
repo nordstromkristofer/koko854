@@ -32,6 +32,8 @@ function Home() {
 
       <div className='bkground'>
         <Header />
+
+        <div className='inforuta'></div>
         <div className='bubz'>
           <section className="sticky">
             <div className="bubbles">

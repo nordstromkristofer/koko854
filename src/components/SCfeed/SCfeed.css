@@ -16,7 +16,7 @@
   border-radius: 20px;
 }
 
-.background {
+.bkground {
   height: 47.74rem;
   width: 90rem;
   background: url('./forest.jpeg') no-repeat center center fixed;
@@ -66,14 +66,14 @@
     height: 11rem;
   }
 
-  .background {
+  .bkground {
     width: 30rem;
     height: 100%;
   }
 }
 
 @media (min-width: 1880px) {
-  .background {
+  .bkground {
     width: 100%;
     height: 55.1rem;
   }
@@ -96,10 +96,17 @@
     height: 11rem;
   }
 
-  .background {
+  .bkground {
     width: 30rem;
     height: 100%;
   }
 
 
+}
+
+@media (min-width: 1400px) {
+
+  .bkground {
+    height: 59rem;
+  }
 }
