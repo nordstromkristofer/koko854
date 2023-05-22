@@ -27,11 +27,11 @@
 .linktext {
   color: white;
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .linktext:hover {
-  font-weight: 900;
+  font-weight: 600;
 }
 
 
@@ -77,6 +77,10 @@
     margin-left: 1rem;
   }
 
+  .linktext.home {
+    display: none
+  }
+
 
 }
 
@@ -108,5 +112,14 @@
 @media (max-width:375px) {
   header {
     width: 345px;
+  }
+
+
+
+  .links {
+    margin-left: -26px;
+    justify-content: center;
+    width: 26rem;
+
   }
 }
