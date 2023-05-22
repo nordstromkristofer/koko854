@@ -6,7 +6,7 @@
   align-items: flex-start;
   background: rgb(19, 28, 16);
   background: linear-gradient(90deg, rgba(54, 74, 64, 0.8) 0%, rgba(106, 149, 82, 0.312) 23%, rgba(0, 0, 0, 0.824) 100%);
-  height: 29%;
+  height: 24%;
 }
 
 .componentContainer {
@@ -15,18 +15,39 @@
   align-items: flex-end;
 }
 
+.logolinks {
+  display: flex;
+  padding-top: 0.2%
+}
+
 .instalogo,
+.instalogo2,
 .soundcloudlogo,
 .mixcloudlogo {
   height: 3rem;
   padding-left: 1%
 }
 
+
+.instalogo2 {
+  position: absolute;
+  bottom: 9.7rem;
+  left: -1.1rem;
+  display: none;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.instalogo:hover .instalogo2 {
+  display: inline;
+  opacity: 1;
+}
+
+
 .mainFeed {
   display: flex;
   flex-direction: row;
   align-self: flex-end;
-  animation: scroll 110s linear infinite;
+  animation: scroll 100s linear infinite;
   width: 200%;
   height: 9rem;
   margin-left: -10.5rem;
@@ -97,11 +118,32 @@
   }
 
   .componentContainer {
-    height: 72%;
+    height: 89%;
   }
 
   .mainFeed {
-    height: 7 rem;
+    height: 7.6rem;
+  }
+
+  .instaimg {
+    height: 6.8rem;
+  }
+
+  .instalogo,
+  .soundcloudlogo,
+  .mixcloudlogo {
+    height: 2rem;
+    padding-left: 0;
+    padding-bottom: 1px;
+
+  }
+
+  .feedContainer {
+    height: 30%;
+  }
+
+  .logolinks {
+    margin-left: 21%;
   }
 
 
