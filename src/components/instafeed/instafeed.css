@@ -146,6 +146,10 @@
     display: none;
   }
 
+  .linktext.home {
+    display: contents;
+  }
+
   .feedContainer {
     height: 50%;
   }
