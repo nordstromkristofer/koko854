@@ -147,7 +147,7 @@
 
   .inforuta {
     width: 20rem;
-    height: 30rem;
+    height: 29rem;
     margin-top: 1rem;
     margin-left: 1.9rem;
   }
@@ -164,5 +164,12 @@
     z-index: 0;
     overflow: hidden;
     top: 11%;
+  }
+
+  .bubz {
+    position: absolute;
+    width: 22rem;
+    bottom: 6rem;
+    height: 30rem;
   }
 }

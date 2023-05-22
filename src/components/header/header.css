@@ -104,3 +104,9 @@
 
 
 }
+
+@media (max-width:375px) {
+  header {
+    width: 345px;
+  }
+}
