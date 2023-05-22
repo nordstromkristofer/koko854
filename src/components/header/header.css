@@ -53,6 +53,11 @@
     width: 370px;
   }
 
+  .headerbackground {
+    justify-content: unset;
+    ;
+  }
+
   nav {
     margin-top: 9%;
     padding: 1%;

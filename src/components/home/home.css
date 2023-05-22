@@ -142,3 +142,27 @@
     height: 59rem;
   }
 }
+
+@media (max-width: 375px) {
+
+  .inforuta {
+    width: 20rem;
+    height: 30rem;
+    margin-top: 1rem;
+    margin-left: 1.9rem;
+  }
+
+  .bkground {
+    width: 23.4rem;
+    height: 42rem;
+    overflow: hidden;
+  }
+
+  .bubbles {
+    width: 95%;
+    height: 89%;
+    z-index: 0;
+    overflow: hidden;
+    top: 11%;
+  }
+}
