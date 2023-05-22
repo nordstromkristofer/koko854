@@ -16,8 +16,8 @@
   border-radius: 20px;
 }
 
-.background {
-  height: 45rem;
+.bkground {
+  height: 47.74rem;
   width: 90rem;
   background: url('./forest.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -66,14 +66,14 @@
     height: 11rem;
   }
 
-  .background {
-    width: 30rem;
-    height: 100%;
+  .bkground {
+    width: 375px;
+    height: 667px;
   }
 }
 
 @media (min-width: 1880px) {
-  .background {
+  .bkground {
     width: 100%;
     height: 55.1rem;
   }
@@ -87,7 +87,7 @@
     gap: 20px;
     padding-top: 3%;
     width: 375px;
-    margin-left: 1.6%
+    margin-left: 12%
   }
 
   .SoundCard,
@@ -96,10 +96,17 @@
     height: 11rem;
   }
 
-  .background {
+  .bkground {
     width: 30rem;
     height: 100%;
   }
 
 
+}
+
+@media (min-width: 1600px) {
+
+  .bkground {
+    height: 59rem;
+  }
 }
