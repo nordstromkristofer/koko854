@@ -143,7 +143,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 375px) {
 
   .inforuta {
     width: 20rem;
@@ -154,7 +154,7 @@
 
   .bkground {
     width: 23.4rem;
-    height: 42rem;
+    height: 667px;
     overflow: hidden;
   }
 

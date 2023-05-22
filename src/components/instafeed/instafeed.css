@@ -91,7 +91,8 @@
 @media only screen and (max-width: 375px) {
 
   .bkground {
-    height: 41.75rem;
+    width: 375px;
+    height: 667px;
 
   }
 

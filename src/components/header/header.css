@@ -64,9 +64,9 @@
   }
 
   .links {
-    margin-left: 0;
+    margin-left: 9px;
     justify-content: space-around;
-    width: 98%;
+    width: 100%;
 
   }
 
