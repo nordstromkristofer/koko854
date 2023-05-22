@@ -122,11 +122,15 @@
   }
 
   .mainFeed {
-    height: 7.6rem;
+    height: 15rem;
   }
 
   .instaimg {
     height: 6.8rem;
+  }
+
+  .instalogo:hover .instalogo2 {
+    display: none;
   }
 
   .instalogo,
@@ -138,8 +142,12 @@
 
   }
 
+  .instalogo2 {
+    display: none;
+  }
+
   .feedContainer {
-    height: 30%;
+    height: 50%;
   }
 
   .logolinks {
