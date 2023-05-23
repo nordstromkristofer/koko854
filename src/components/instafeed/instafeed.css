@@ -143,11 +143,11 @@
   }
 
   .mainFeed {
-    height: 15rem;
+    height: 13rem;
   }
 
   .instaimg {
-    height: 6.8rem;
+    height: 4.8rem;
   }
 
   .instalogo:hover .instalogo2 {
@@ -157,7 +157,7 @@
   .instalogo,
   .soundcloudlogo,
   .mixcloudlogo {
-    height: 2rem;
+    height: 3rem;
     padding-left: 0;
     padding-bottom: 1px;
 
@@ -168,11 +168,12 @@
   }
 
   .feedContainer {
-    height: 44%;
+    height: 49%;
   }
 
   .logolinks {
-    margin-left: 21%;
+    margin-left: 11%;
+    width: 77%;
   }
 
 
