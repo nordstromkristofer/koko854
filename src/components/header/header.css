@@ -14,13 +14,16 @@
 .links {
   display: flex;
   justify-content: center;
-
-  width: 68rem;
+  width: 116rem;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-left: 1.7rem;
+  margin-left: -33.5rem;
   padding-bottom: 1%;
+}
+
+.homeSymbol {
+  display: none;
 }
 
 
@@ -65,9 +68,10 @@
   }
 
   .links {
-    margin-left: 9px;
-    justify-content: space-around;
-    width: 100%;
+    display: flex;
+    margin-left: -26px;
+    width: 25rem;
+    align-items: end;
 
   }
 
@@ -76,6 +80,21 @@
     padding: 15px;
     margin-right: 1rem;
     margin-left: 1rem;
+  }
+
+  .linktext {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+
+  .homeText {
+    display: none;
+  }
+
+  .homeSymbol {
+    display: block;
   }
 
 
@@ -113,12 +132,17 @@
     width: 345px;
   }
 
+  .linktext-home {
+    display: none;
+  }
+
 
 
   .links {
-    margin-left: -26px;
+    margin-left: -3.4rem;
     justify-content: center;
-    width: 26rem;
+    width: 30rem;
+    margin-bottom: -0.5rem;
 
   }
 }
