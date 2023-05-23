@@ -15,10 +15,11 @@
   display: flex;
   justify-content: center;
 
-  width: 71rem;
+  width: 68rem;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  margin-left: 1.7rem;
   padding-bottom: 1%;
 }
 

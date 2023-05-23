@@ -4,6 +4,7 @@ import Header from '../header/header'
 import instaImg from './insta2.png'
 import instaImg2 from './insta.png'
 import soundCImg from './soundcloud2.png'
+import soundCImg2 from './soundcloud1.png'
 import mixCImg from './mixcloud3.png'
 
 const instaAccesstoken = (process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN);
@@ -48,7 +49,8 @@ function Instafeed() {
                   <img src={instaImg2} className="instalogo2" alt="Instagramlogo2" />
                 </a>
                 <a href="https://soundcloud.com/kristougha" target="_blank" rel="noopener noreferrer" className="soundcloudlogo" >
-                  <img src={soundCImg} className="instalogo" alt="Soundcloudlogo" />
+                  <img src={soundCImg} className="soundcloudlogo" alt="Soundcloudlogo" />
+                  <img src={soundCImg2} className="soundcloudlogo2" alt="Soundcloudlogo2" />
                 </a>
                 <a href="https://www.mixcloud.com/koko854/" target="_blank" rel="noopener noreferrer" className="mixcloudlogo" >
                   <img src={mixCImg} className="instalogo" alt="Mixcloudlogo" />

@@ -17,8 +17,11 @@
 
 .logolinks {
   display: flex;
-  padding-top: 0.2%;
-  margin-left: 44%;
+  justify-content: space-between;
+  padding-top: 0.8%;
+  position: absolute;
+  width: 60%;
+  margin: 0% 19% auto;
 }
 
 .instalogo,
@@ -26,17 +29,33 @@
 .soundcloudlogo,
 .mixcloudlogo {
   height: 3rem;
-  padding-left: 1%
 }
 
 
 .instalogo2 {
   position: absolute;
-  bottom: 9.7rem;
-  left: -1.1rem;
+  height: 3rem;
+  padding-left: 1%;
+  position: absolute;
+  left: -0.54rem;
   display: none;
-  transition: visibility 0s, opacity 0.5s linear;
 }
+
+.soundcloudlogo2 {
+  position: absolute;
+  height: 3rem;
+  padding-left: 1%;
+  position: absolute;
+  left: 24.95rem;
+  display: none;
+}
+
+.soundcloudlogo:hover .soundcloudlogo2 {
+  display: inline;
+  opacity: 1;
+}
+
+
 
 .instalogo:hover .instalogo2 {
   display: inline;
