@@ -10,7 +10,7 @@ const Header: React.FC = () => {
         <nav>
           <div className="links">
             <Link to="/" className="homesymbollink">
-              <FiHome className="homeSymbol" size="35px" color="white" margin-top="10px" />
+              <FiHome className="homeSymbol" size="20px" color="white" margin-top="10px" />
             </Link>
             <Link to="/" className="linktext linktext-home">
               Home

@@ -59,7 +59,7 @@ function SCfeed() {
   return (
     <div>
 
-      <div className="bkground">
+      <div className="scbkground">
         <Header />
         <div className="container">
 
