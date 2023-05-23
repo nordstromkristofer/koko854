@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './home.css'
 import Header from '../header/header'
 
+import { TfiEmail } from 'react-icons/tfi'
+import { AiOutlineLinkedin } from 'react-icons/ai'
+import { HiOutlineDotsVertical } from 'react-icons/hi'
+
+import { HiOutlineDotsHorizontal } from 'react-icons/hi'
+
 const instaAccesstoken = (process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN);
 
 interface Post {
@@ -33,7 +39,19 @@ function Home() {
       <div className='bkground'>
         <Header />
 
-        <div className='inforuta'></div>
+        <div className='inforuta'>
+          <div className='biglogos'>
+            <a href="mailto:nordstromkristofer@gmail.com" className="emaillogo" ><TfiEmail color="white" size="15rem" /></a>
+            <a className="line"><HiOutlineDotsVertical size="15rem" color="white" /></a>
+            <a href="https://www.linkedin.com/in/kristofer-nordstr%C3%B6m-b80885224/" className="linkedinlogo" ><AiOutlineLinkedin color="white" size="15rem" /></a>
+          </div>
+
+          <div className='smalllogos'>
+            <a href="mailto:nordstromkristofer@gmail.com" className="emaillogo" ><TfiEmail color="white" size="6rem" /></a>
+            <a className="line"><HiOutlineDotsHorizontal size="6rem" color="white" /></a>
+            <a href="https://www.linkedin.com/in/kristofer-nordstr%C3%B6m-b80885224/" className="linkedinlogo" ><AiOutlineLinkedin color="white" size="6rem" /></a>
+          </div>
+        </div>
         <div className='bubz'>
           <section className="sticky">
             <div className="bubbles">

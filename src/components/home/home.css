@@ -9,13 +9,21 @@
 }
 
 .inforuta {
-  background: linear-gradient(90deg, rgba(19, 28, 16, 0) 18%, rgba(82, 149, 85, 0.24) 23%, rgba(0, 0, 0, 0.66) 100%);
-  width: 20rem;
-  height: 30rem;
+  background: linear-gradient(90deg, rgba(19, 28, 16, 0) 6%, rgba(82, 149, 85, 0.24) 28%, rgba(0, 0, 0, 0.66) 98%);
+  width: 92%;
+  height: 36rem;
   margin-top: 5rem;
-  margin-left: 4rem;
+  margin-left: 3rem;
   border-radius: 25px;
   border: 1px solid white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smalllogos {
+  display: none;
 }
 
 
@@ -35,14 +43,14 @@
   width: 40px;
   height: 40px;
   background: linear-gradient(90deg, rgba(19, 28, 16, 0.899) 10%, rgba(135, 162, 45, 0.572) 23%, rgba(0, 0, 0, 0.66) 100%);
-  border-radius: 50%;
-  opacity: 0.5;
-  animation: rise 12s infinite ease-in;
+  border-radius: 67%;
+  opacity: 0.3;
+  animation: rise 11s infinite ease-in;
 }
 
 .bubble:nth-child(1) {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 70px;
   left: 10%;
   animation-duration: 8s;
 }
@@ -58,8 +66,8 @@
 .bubble:nth-child(3) {
   width: 50px;
   height: 50px;
-  left: 35%;
-  animation-duration: 7s;
+  left: 50%;
+  animation-duration: 6s;
   animation-delay: 2s;
 }
 
@@ -169,6 +177,19 @@
     overflow: hidden;
     top: 11%;
   }
+
+  .biglogos {
+    display: none;
+  }
+
+  .smalllogos {
+    height: 25rem;
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 
   /*   .linktext.home {
     display: none
