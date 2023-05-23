@@ -171,6 +171,10 @@
     height: 49%;
   }
 
+  .instaimg {
+    border: 1px solid black;
+  }
+
   .logolinks {
     margin-left: 11%;
     width: 77%;
